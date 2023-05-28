@@ -84,8 +84,12 @@ const config = {
     port: configUtil.devPort,
     host: configUtil.devHost,
     allowedHosts: "all",
+    historyApiFallback: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
+    },
+    client: {
+      overlay: false
     }
   },
   performance: {

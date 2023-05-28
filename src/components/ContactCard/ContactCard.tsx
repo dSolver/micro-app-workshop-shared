@@ -12,7 +12,7 @@ export interface ContactCardProps {
 }
 
 
-export const ContactCard: React.FC<ContactCardProps> = ({ name, email, description, image }) => {
+const ContactCard: React.FC<ContactCardProps> = ({ name, email, description, image }) => {
 
     return (
         <Card>
@@ -26,3 +26,5 @@ export const ContactCard: React.FC<ContactCardProps> = ({ name, email, descripti
         </Card>
     )
 }
+
+export default ContactCard;
